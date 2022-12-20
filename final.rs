@@ -18,8 +18,8 @@ fn main() {
 
     // Matching on a range of values
     match x {
-        1...5 => println!("x is between 1 and 5"),
-        6...10 => println!("x is between 6 and 10"),
+        1 | 5 => println!("x is between 1 and 5"),
+        6 | 10 => println!("x is between 6 and 10"),
         _ => println!("x is something else"),
     }
 
@@ -37,5 +37,10 @@ fn main() {
     match z {
         "hello" => println!("z is a string"),
         _ => println!("z is something else"),
+    }
+     let x = "no";
+    match x {
+        "no" => println!("no is a string"),
+        _ => println!("no is something else"),
     }
 }
